@@ -1,0 +1,26 @@
+About Git
+git init will create a new local GIT repository. The following Git command will create a repository in the current directory:
+git init
+Alternatively, you can create a repository within a new directory by specifying the project name:
+
+git init [project name]
+git clone is used to copy a repository. If the repository lies on a remote server, use:
+git clone username@host:/path/to/repository
+Conversely, run the following basic Git command to copy a local repository:
+
+git clone /path/to/repository
+git add is used to add files to the staging area. For example, the basic Git following command will index the temp.txt file:
+git add <temp.txt>
+git commit will create a snapshot of the changes and save it to the git directory.
+git commit –m “Message to go with the commit here”
+Note that any committed changes won’t make their way to the remote repository.
+
+git config can be used to set user-specific configuration values like email, username, file format, and so on. To illustrate, the command for setting up an email will look like this:
+git config --global user.email youremail@example.com
+The –global flag tells GIT that you’re going to use that email for all local repositories. If you want to use different emails for different repositories, use the command below:
+
+git config --local user.email youremail@example.com
+git status displays the list of changed files together with the files that are yet to be staged or committed.
+git status
+git push is used to send local commits to the master branch of the remote repository. Here’s the basic code structure:
+git push origin <master>
