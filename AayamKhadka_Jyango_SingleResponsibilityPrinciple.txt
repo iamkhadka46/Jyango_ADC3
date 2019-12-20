@@ -1,0 +1,7 @@
+S — Single responsibility principle
+
+In programming, the Single Responsibility Principle states that every module or class should have responsibility over a single part of the functionality provided by the software.
+
+You may have heard the quote: “Do one thing and do it well”.
+This refers to the single responsibility principle.
+In the article Principles of Object Oriented Design, Robert C. Martin defines a responsibility as a ‘reason to change’, and concludes that a class or module should have one, and only one, reason to be changed.
